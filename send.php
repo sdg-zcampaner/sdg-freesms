@@ -7,7 +7,7 @@
 	$message = $_POST['msg'];
 	$number = $_POST['number'];
 
-	var_dump($_POST);
+	//var_dump($_POST);
 
 	/* Chikka SMS Credentials */
 	$clientId = 'c4347485379ad1a27451d0251ab692a4743912e090c809959cce1afce56aa5be';
@@ -43,7 +43,7 @@
 
 	}
 
-	echo $response->description;
+	// echo $response->description;
 
 
 ?>

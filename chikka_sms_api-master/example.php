@@ -17,6 +17,6 @@ $response = $chikkaAPI->sendText('1234561', '6391561866732', 'tests');
 	header("HTTP/1.1 " . $response->status . " " . $response->message);
 //}
 
-echo $response->description;
+//echo $response->description;
 
 ?>

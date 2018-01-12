@@ -5,28 +5,8 @@
 
 	if(isset($_POST['send'])){
 		extract($_POST);
-		// $captcha = $_POST['g-recaptcha-response'];
-		// //verify captcha service
-		// if(isset($captcha)){
 
-			// if($handler->verifyCaptchaSecretKey($captcha)){
-
-			//send the message
-
-				$action  = $handler->sendMessage($msg,$number);
-				
-
-			// }else{
-
-			// 	$_SESSION['flash'] = "Invalid Captcha. Message sending failed.";
-			// }
-
-			
-		// }else{
-
-		// 		$_SESSION['flash'] = "Captcha is required.";
-		// }
-		
+		$action  = $handler->sendMessage($msg,$number);
 	}
 
 ?>

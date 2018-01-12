@@ -20,6 +20,6 @@ if($_POST){
     else{
         echo "Message has been successfully processed.";
     }
-    var_dump($chikkaAPI->receiveNotifications());
+    //var_dump($chikkaAPI->receiveNotifications());
 }
 ?>
