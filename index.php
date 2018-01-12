@@ -5,7 +5,7 @@
 
 	if(isset($_POST['send'])){
 		extract($_POST);
-		$captcha = $_POST['g-recaptcha-response'];
+		// $captcha = $_POST['g-recaptcha-response'];
 		// //verify captcha service
 		// if(isset($captcha)){
 
@@ -26,9 +26,6 @@
 
 		// 		$_SESSION['flash'] = "Captcha is required.";
 		// }
-		
-		
-		
 		
 	}
 
