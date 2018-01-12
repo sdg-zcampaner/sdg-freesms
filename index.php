@@ -86,8 +86,8 @@
 							  <input required="" name="number" type="text" class="form-control" placeholder="Mobile Number e.g +639077527512" aria-describedby="basic-addon1">
 
 								 <Br/><textarea required=""  placeholder="Write your message here..." name="msg" class="form-control" rows="5" cols="40"></textarea><Br/>
-								<div class="g-recaptcha" data-sitekey="6LefoQgTAAAAAFMB8Se9ruRUcrgG1Wu1JY8Q3nJo"></div>
-								<input type="hidden" name="gkey" value="6LefoQgTAAAAAFMB8Se9ruRUcrgG1Wu1JY8Q3nJo" class="g-recaptcha" >
+								<div class="g-recaptcha" data-sitekey="6LfCZEAUAAAAAJjz0R4m1RpDobyNBc35ihL1OwUS"></div>
+								<input type="hidden" name="gkey" value="6LfCZEAUAAAAAJjz0R4m1RpDobyNBc35ihL1OwUS" class="g-recaptcha" >
 								<Br/>
 								<input class="btn btn-lg btn-success" type="submit" value="Send Message" name="send">
 
