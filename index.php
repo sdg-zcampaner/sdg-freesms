@@ -6,26 +6,26 @@
 	if(isset($_POST['send'])){
 		extract($_POST);
 		$captcha = $_POST['g-recaptcha-response'];
-		//verify captcha service
-		if(isset($captcha)){
+		// //verify captcha service
+		// if(isset($captcha)){
 
-			if($handler->verifyCaptchaSecretKey($captcha)){
+			// if($handler->verifyCaptchaSecretKey($captcha)){
 
 			//send the message
 
 				$action  = $handler->sendMessage($msg,$number);
 				
 
-			}else{
+			// }else{
 
-				$_SESSION['flash'] = "Invalid Captcha. Message sending failed.";
-			}
+			// 	$_SESSION['flash'] = "Invalid Captcha. Message sending failed.";
+			// }
 
 			
-		}else{
+		// }else{
 
-				$_SESSION['flash'] = "Captcha is required.";
-		}
+		// 		$_SESSION['flash'] = "Captcha is required.";
+		// }
 		
 		
 		
@@ -40,7 +40,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
 	<!-- /recaptcha service -->
-	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -83,11 +83,11 @@
 
 						<form action="#" class="form-horizontal" method="post" >
 
-							  <input required="" name="number" type="text" class="form-control" placeholder="Mobile Number e.g +639077527512" aria-describedby="basic-addon1">
+							  <input required="" name="number" type="text" class="form-control" placeholder="Mobile Number e.g +639077527512" aria-describedby="basic-addon1" required/>
 
-								 <Br/><textarea required=""  placeholder="Write your message here..." name="msg" class="form-control" rows="5" cols="40"></textarea><Br/>
-								<div class="g-recaptcha" data-sitekey="6LfCZEAUAAAAAJjz0R4m1RpDobyNBc35ihL1OwUS"></div>
-								<input type="hidden" name="gkey" value="6LfCZEAUAAAAAJjz0R4m1RpDobyNBc35ihL1OwUS" class="g-recaptcha" >
+								 <Br/><textarea required=""  placeholder="Write your message here..." name="msg" class="form-control" rows="5" cols="40" required/></textarea><br/>
+								<!-- <div class="g-recaptcha" data-sitekey="6LfCZEAUAAAAAJjz0R4m1RpDobyNBc35ihL1OwUS"></div>
+								<input type="hidden" name="gkey" value="6LfCZEAUAAAAAJjz0R4m1RpDobyNBc35ihL1OwUS" class="g-recaptcha" > -->
 								<Br/>
 								<input class="btn btn-lg btn-success" type="submit" value="Send Message" name="send">
 
@@ -98,7 +98,7 @@
 			</div>
 		</div><!--  /row -->
 		<hr/>
-		<footer>&copy; <?php print date('Y') ?> RAKSQUAD Dev Team</footer>
+		<footer>&copy; <?php print date('Y') ?> Zach Campaner</footer>
 	</div><!--  /container -->	
 		
 	
