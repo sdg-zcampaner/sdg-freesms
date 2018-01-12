@@ -34,7 +34,7 @@
 		/* Recaptcha credentials */
 
 		// secret key
-		protected $secret = "6LefoQgTAAAAABVqguX26ie45Brh-GEXRXZC44LO";
+		protected $secret = "6LfCZEAUAAAAAGviVYjVRsPKWun-0P7T3I7WjP3n";
 		 
 		
 		//message response
